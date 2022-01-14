@@ -29,6 +29,9 @@ dependencies {
     implementation("io.ktor:ktor-server-websockets:$ktor_version")
     implementation("io.ktor:ktor-server-netty:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
-    testImplementation("io.ktor:ktor-server-tests:$ktor_version")
+    testImplementation("io.ktor:ktor-server-tests-host:$ktor_version")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlin_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    testImplementation("org.amshove.kluent:kluent:1.0")
+
 }
