@@ -28,10 +28,11 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
     implementation("io.ktor:ktor-server-websockets:$ktor_version")
     implementation("io.ktor:ktor-server-netty:$ktor_version")
-    implementation("ch.qos.logback:logback-classic:$logback_version")
+    implementation("ch.qos.logback:logback-classic:1.68")
     testImplementation("io.ktor:ktor-server-tests-host:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlin_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
-    testImplementation("org.amshove.kluent:kluent:1.0")
+    testImplementation("org.amshove.kluent:kluent:1.68")
+    implementation("io.cucumber:cucumber-java:7.2.2")
 
 }
